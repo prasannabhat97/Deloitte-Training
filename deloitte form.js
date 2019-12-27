@@ -9,7 +9,7 @@ function submitFunction(){
 function selectValidation(){
     var userCity=document.getElementById("city").value;
     if(userCity=="non"){
-        document.getElementById("selectError").innerHTML="Please select a city";
+        document.getElementById("selectError").innerHTML=" Please select a city";
         return false;
     }
     else{
@@ -26,7 +26,7 @@ function radioValidation(){
         }
     }
     if(count==0){
-        document.getElementById("radioError").innerHTML="Please select gender";
+        document.getElementById("radioError").innerHTML=" Please select gender";
         return false;
     }
     else{
