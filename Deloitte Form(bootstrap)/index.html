@@ -11,28 +11,7 @@
 </head>
 
 <body style="background-image: url(&quot;assets/img/background.jpg&quot;);margin-top: 82px;">
-    <div>
-        <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);font-size: 30px;">Deloitte.</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1" style="filter: blur(0px) brightness(184%) hue-rotate(0deg);font-size: 20px;">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-hover-animate="pulse" href="#">Home</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" data-bs-hover-animate="pulse" href="#">About</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" data-bs-hover-animate="pulse" href="#">Contact us</a></li>
-                        <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" data-bs-hover-animate="pulse" href="#">Services</a>
-                            <div class="dropdown-menu bg-dark" role="menu" style="color: rgb(0,0,0);background-color: #27272c;"><a class="dropdown-item" role="presentation" href="#" style="color: rgb(0,0,0);font-family: Arvo, serif;">Tax</a><a class="dropdown-item" role="presentation" href="#" style="font-family: Arvo, serif;color: rgb(0,0,0);">Consulting</a>
-                                <a
-                                    class="dropdown-item" role="presentation" href="#" style="font-family: Arvo, serif;color: rgb(0,0,0);">Cloud</a>
-                            </div>
-                        </li>
-                    </ul>
-            </div>
-    </div>
-    </nav>
-    </div>
-    <h1 class="text-center">Deloitte New Hire Registry</h1>
-	<form>
+    <h1 class="text-center" style="height: 36px;">Deloitte New Hire Registry</h1>
     <div class="row text-center" style="margin-top: 25px;height: 50px;">
         <div class="col-7 text-center" style="height: 50px;width: 1022.6px;"><label class="col-form-label" style="font-family: 'Alfa Slab One', cursive;font-size: 18px;">Enter Your Name :&nbsp;</label></div>
         <div class="col-5 text-left" style="height: 51px;"><input type="text" name="name" placeholder="Enter your name"></div>
@@ -73,10 +52,21 @@
         <div class="col-5"><input type="file" name="resume" value="1" multiple=""></div>
     </div>
     <div class="row" style="height: 50px;">
-        <div class="col-7 text-right" style="height: 50px;"><button class="btn btn-primary" type="submit">Submit</button></div>
-        <div class="col-5 text-left"><button class="btn btn-primary" type="reset">Reset</button></div>
+        <div class="col-7 text-center" style="height: 50px;"><label class="col-form-label">Choose Your Fav Color :&nbsp;</label></div>
+        <div class="col-5 text-left"><input type="color" name="color"></div>
     </div>
-	</form>
+    <div class="row">
+        <div class="col-7 text-center" style="height: 50px;"><label class="col-form-label">Enter Your DOB :&nbsp;</label></div>
+        <div class="col-5 text-left" style="height: 50px;"><input type="date" name="dob"></div>
+    </div>
+    <div class="row" style="height: 50px;">
+        <div class="col-7 text-center"><label class="col-form-label">Enter Your Password :&nbsp;</label></div>
+        <div class="col-5 text-left"><input type="password" name="pwd" placeholder="Enter password"></div>
+    </div>
+    <div class="row">
+        <div class="col-7 text-right" style="height: 50px;"><button class="btn btn-primary" type="submit">Submit</button></div>
+        <div class="col-5 text-left" style="height: 50px;"><button class="btn btn-primary" type="reset">Reset</button></div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
