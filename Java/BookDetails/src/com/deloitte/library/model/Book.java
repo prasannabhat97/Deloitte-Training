@@ -16,7 +16,7 @@ public class Book {
 	}
 
 	public Book() {
-		++count;
+		
 	}
 	
 	public int getBookId() {

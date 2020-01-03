@@ -1,6 +1,7 @@
 package com.deloitte.library.services;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 import com.deloitte.library.dao.BooksDAO;
 import com.deloitte.library.model.Book;
@@ -12,7 +13,7 @@ public class Bookimpl implements BookInterface{
 		// TODO Auto-generated method stub
 		
 		Book book=new Book();
-		book.setBookId(Book.getCount());
+		book.setBookId(BooksDAO.getNumber());
 		book.setBookName(bookName);
 		book.setPrice(price);
 		book.setBookAuthor(bookAuthor);
@@ -20,11 +21,20 @@ public class Bookimpl implements BookInterface{
 	}
 
 	@Override
-	public void  displayBook(ArrayList<Book> list) {
+	public List<Book>  displayBook() {
 		// TODO Auto-generated method stub
-		for(Book i:list) {
-			System.out.println(i);
-		}
+		return BooksDAO.displayBook();
+	}
+
+	@Override
+	public List<Book> searchBook(String bookName) {
+		// TODO Auto-generated method stub
+		return BooksDAO.searchBook(bookName);
+	}
+
+	public boolean deleteBook(int deleteId) {
+		// TODO Auto-generated method stub
+		return BooksDAO.deleteBook(deleteId);
 	}
 
 }
