@@ -1,14 +1,14 @@
 package com.example.ITCinema.model;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Movie {
 private int movieId;
 private String movieName;
-private List<String> avilableSeats =new ArrayList<String>();
+private int avilableSeats;
 private double movieRating;
 private int totalSeats;
+
 public int getMovieId() {
 	return movieId;
 }
@@ -21,10 +21,10 @@ public String getMovieName() {
 public void setMovieName(String movieName) {
 	this.movieName = movieName;
 }
-public List<String> getAvilableSeats() {
+public int getAvilableSeats() {
 	return avilableSeats;
 }
-public void setAvilableSeats(List<String> avilableSeats) {
+public void setAvilableSeats(int avilableSeats) {
 	this.avilableSeats = avilableSeats;
 }
 public double getMovieRating() {

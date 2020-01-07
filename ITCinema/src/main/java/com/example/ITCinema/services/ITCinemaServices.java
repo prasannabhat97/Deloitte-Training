@@ -29,4 +29,9 @@ public class ITCinemaServices {
 	public void getAdminData() {
 		dao.gerAdminData();
 	}
+	public void addMovie(Movie movie) {
+		// TODO Auto-generated method stub
+		System.out.println("Inside ser :");
+		dao.addMovie(movie);
+	}
 }
