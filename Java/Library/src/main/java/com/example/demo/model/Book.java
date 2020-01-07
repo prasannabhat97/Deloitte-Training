@@ -1,23 +1,23 @@
 package com.example.demo.model;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+
 public class Book {
-	private int bookkId;
+	private int bookId;
 	private String bookName;
 	private double price;
 	
 	public Book() {
 		super();
-		System.out.println("Inside Constructor : ");
+		//System.out.println("Inside Constructor : ");
 	}
 	
-	public int getBookkId() {
-		return bookkId;
+	public int getBookId() {
+		return bookId;
 	}
-	public void setBookkId(int bookkId) {
-		this.bookkId = bookkId;
+	public void setBookId(int bookId) {
+		this.bookId = bookId;
 	}
 	public String getBookName() {
 		return bookName;
@@ -33,7 +33,7 @@ public class Book {
 	}
 	@Override
 	public String toString() {
-		return "Book [bookkId=" + bookkId + ", bookName=" + bookName + ", price=" + price + "]";
+		return "Book [bookkId=" + bookId + ", bookName=" + bookName + ", price=" + price + "]";
 	}
 	
 }
